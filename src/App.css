@@ -1,0 +1,21 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+body {
+  display: grid;
+  background: #fefefe;
+  min-height: 100vh;
+}
+
+#sign-in-form{
+  max-width: 300px;
+}
+
+#main-container{
+  place-items: center center;
+}
+
+.login-logo{
+  width: 72px;
+  height: 72px;
+}
