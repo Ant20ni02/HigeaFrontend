@@ -3,14 +3,16 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
 import { NavLink, Outlet } from 'react-router-dom'
+import '../App.css';
+import Img from '../assets/6.png'
 
 const Layout = () => {
   return (
     <main>
-        <Navbar bg='dark'>
+        <Navbar className="color-nav" variant="light">
             <Container>
                 <Navbar.Brand>
-                    <NavLink to='/home'>Tec-verse</NavLink>
+                    <NavLink to='/home' className="layout-logo"><img src={Img}></img></NavLink>
                 </Navbar.Brand>
                 <Nav>
                     <Nav.Item>
