@@ -1,16 +1,16 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef} from 'react'
 import { useNavigate } from 'react-router-dom'
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import ErrorModal from './ErrorModal'
 import Img from '../assets/5.png'
+//import ErrorModal from './ErrorModal'
 
 
 const LoginForm = () => {
     const form = useRef();
     const navigate = useNavigate();
-    const [modalShow, setModalShow] = useState(false)
+    //const [modalShow, setModalShow] = useState(false)
 
     
     const handleSubmit = async (e) => {
@@ -32,10 +32,9 @@ const LoginForm = () => {
   
         navigate('/home');
       }
-      else{
+      /*else {
         setModalShow(true)
-      }
-  
+      }*/
   
     }
   
@@ -47,7 +46,7 @@ const LoginForm = () => {
               alt="Logo Higea" className="login-logo mb-4"/>
           <Form.Group className="mb-1">
             <Form.Control type="text" placeholder="Correo"
-                          name="correo" required />
+                          name="user" required />
           </Form.Group>
           <Form.Group className="mb-1">
             <Form.Control type="password" placeholder="Contraseña"
